@@ -11,7 +11,7 @@
 #   storage km_bounding: arguments.cone.selector: string
 #       判定対象とするエンティティのセレクタ(distanceの最大距離を設定することを推奨)
 #   storage km_bounding: arguments.cone.angle: float
-#       円錐の頂角(0°~360°)
+#       円錐の半頂角(0°~180°)
 #
 # @output tag bounding_cone
 #
