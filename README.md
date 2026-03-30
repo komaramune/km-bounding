@@ -30,6 +30,14 @@ say @e[tag=bounding_cuboid]
 tag @e[tag=bounding_cuboid] remove bounding_cuboid
 ```
 
+## 注意点
+このライブラリの導入にあたって以下の点にご留意ください。\
+オーバーワールドの[0,0]チャンクをforceloadします。\
+314-0-3bd-0-161というUUIDの計算用マーカエンティティが原点に存在します。killしたり移動させたりしないでください。
+
+## ライセンス
+These codes are released under the MIT License, see LICENSE.
+
 ## 連絡先 / Contact
 不具合や要望などがあればXまでご連絡ください。
 https://x.com/komaramune
