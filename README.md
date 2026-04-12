@@ -30,6 +30,61 @@ say @e[tag=bounding_cuboid]
 tag @e[tag=bounding_cuboid] remove bounding_cuboid
 ```
 
+## 引数 / Arguments
+各ファンクション内のドキュメントからも確認できます。
+
+### 直方体：cuboid
+| 要求データ | 型 | 説明 |
+| :---------------- | :----- | :------------------------------- |
+| 実行位置 | position | 基準点 |
+| 実行向き | rotation | 直方体の向き |
+| arguments.cuboid.selector | string | 判定対象とするエンティティのセレクタ |
+| arguments.cuboid.x_plus | double | 基準点からX+方向への大きさ |
+| arguments.cuboid.y_plus | double | 基準点からY+方向への大きさ |
+| arguments.cuboid.z_plus | double | 基準点からZ+方向への大きさ |
+| arguments.cuboid.x_minus | double | 基準点からX-方向への大きさ |
+| arguments.cuboid.y_minus | double | 基準点からY-方向への大きさ |
+| arguments.cuboid.z_minus | double | 基準点からZ-方向への大きさ |
+
+### 円柱：cylinder
+| 要求データ | 型 | 説明 |
+| :---------------- | :----- | :------------------------------- |
+| 実行位置 | position | 基準点（円の中心） |
+| arguments.cylinder.selector | string | 判定対象とするエンティティのセレクタ |
+| arguments.cylinder.radius | double | 円柱の半径 |
+| arguments.cylinder.y_plus | double | 基準点から円柱の天面までの距離 |
+| arguments.cylinder.y_minus | double | 基準点から円柱の底面までの距離 |
+
+### 扇形柱・ケーキ型：cake
+| 要求データ | 型 | 説明 |
+| :---------------- | :----- | :------------------------------- |
+| 実行位置 | position | 基準点（扇型の中心） |
+| 実行向き | rotation | 基準向き（Y軸向きのみ反映） |
+| arguments.cake.selector | string | 判定対象とするエンティティのセレクタ |
+| arguments.cake.radius | double | 扇型柱の半径 |
+| arguments.cake.y_plus | double | 基準点から扇型柱の天面までの距離 |
+| arguments.cake.y_minus | double | 基準点から扇型柱の底面までの距離 |
+| arguments.cake.angle_plus | double | 基準向きからプラス方向の扇型の角度 |
+| arguments.cake.angle_minus | double | 基準向きからマイナス方向の扇型の角度 |
+
+### 円錐：cone
+| 要求データ | 型 | 説明 |
+| :---------------- | :----- | :------------------------------- |
+| 実行位置 | position | 円錐の頂点 |
+| 実行向き | rotation | 基準向き（Y軸向きのみ反映） |
+| arguments.cake.selector | string | 判定対象とするエンティティのセレクタ |
+| arguments.cake.radius | double | 扇型柱の半径 |
+| arguments.cake.y_plus | double | 基準点から扇型柱の天面までの距離 |
+| arguments.cake.y_minus | double | 基準点から扇型柱の底面までの距離 |
+| arguments.cake.angle_plus | double | 基準向きからプラス方向の扇型の角度 |
+| arguments.cake.angle_minus | double | 基準向きからマイナス方向の扇型の角度 |
+
+### 平面：plane
+| 要求データ | 型 | 説明 |
+| :---------------- | :----- | :------------------------------- |
+| 実行位置 | position | 面が通る点 |
+| 実行向き | rotation | 面の向き |
+
 ## 注意点
 このライブラリの導入にあたって以下の点にご留意ください。\
 オーバーワールドの[0,0]チャンクをforceloadします。\
