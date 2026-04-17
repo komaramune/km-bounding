@@ -6,7 +6,7 @@
 #   position: 実行位置
 #       基準点（扇型の中心）
 #   rotation: 実行向き
-#       基準向き
+#       基準向き（横向きのみ反映）
 #   storage km_bounding: arguments.cake.selector: string
 #       判定対象とするエンティティのセレクタ
 #   storage km_bounding: arguments.cake.radius: double
