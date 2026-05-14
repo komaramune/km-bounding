@@ -47,4 +47,4 @@
 
 # ストレージリセット
     data modify storage km_bounding: arguments.cake set value {selector:"@e",radius:0.0,y_plus:0.0,y_minus:0.0,angle_plus:0.0,angle_minus:0.0}
-    # data remove storage km_bounding: cake
+    data remove storage km_bounding: cake
